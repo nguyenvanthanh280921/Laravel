@@ -1,0 +1,76 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    .header_right {
+      margin-right: 20px;
+    }
+  }
+  .section_right {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 255px;
+  }
+  .infos {
+    button {
+      margin-left: 10px;
+      min-width: auto;
+    }
+  }
+  .btn {
+    padding: 10px;
+  }
+  table.listing {
+    tbody {
+      tr {
+        td {
+          padding: 15px .2%;
+          text-align: left;
+          &.ipad_center {
+            text-align: center;
+          }
+          input[type="text"] {
+            text-align: left;
+          }
+        }
+      }
+    }
+    tfoot {
+      tr {
+        td {
+          text-align: left;
+        }
+      }
+    }
+  }
+  .section_left {
+    width: 255px;
+  }
+  ul.mainmenu {
+    padding: 0 0 0 5px;
+  }
+  .title-one {
+    text-overflow: inherit;
+    overflow: auto;
+    white-space: inherit;
+  }
+  .infos {
+    h3 {
+      font-size: 16px;
+      span {
+        &.small {
+          &.time {
+            font-size: 12px;
+            margin-left: 10px;
+          }
+          &.number {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+  .ads {
+    padding: 30px 15px 10px 15px;
+  }
+}
+
+

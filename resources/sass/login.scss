@@ -1,0 +1,112 @@
+.login {
+  header {
+    margin: 40px 0;
+    padding: 0;
+    background: none;
+  }
+  a.logo {
+    padding: 55px 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    display: block;
+    span {
+      margin: 15px 0 0 0;
+      font-size: 16px;
+      font-weight: normal;
+      display: block;
+      letter-spacing: 1px;
+    }
+    ::before {
+      margin: 0 0 0 -20px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background: url('../img/icons.png') no-repeat -60px -140px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .maincontent {
+    margin: 0 auto;
+    padding: 50px;
+    width: 355px;
+    .info {
+      margin: 40px 0 0 0;
+      color: $light;
+      text-align: center;
+      a {
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    .form-field {
+      margin: 0 0 40px 0;
+      position: relative;
+    }
+    input[type="text"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+      padding: 10px 0;
+      border-width: 0 0 2px 0;
+      border-style: solid;
+      border-color: $input-border;
+      display: block;
+      color: $light;
+      width: 100%;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      padding: 8px 35px;
+      cursor: pointer;
+      margin: 50px auto 0;
+      display: block;
+      text-decoration: none;
+      border: 1px solid $white;
+      transition: 0.5s ease all;
+      &:hover,&:focus{
+        outline: none;
+        border: 1px solid $maincolor;
+        background: #fff;
+        color: $maincolor;
+      }
+    }
+    .error {
+      margin: 0 0 -20px 0;
+      padding: 0 0 0 25px;
+      font-size: 14px;
+      color: $maincolor;
+      position: relative;
+      display: block;
+      &::before {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("../img/icons.png") no-repeat -180px 0;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+  .message {
+    margin-bottom: 30px;
+    &.mb10 {
+      margin-bottom: 10px;
+    }
+  }
+}
